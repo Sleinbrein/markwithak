@@ -19,15 +19,35 @@ body,html{
     display: flex;
     align-items: center;
     font-family: 'Oswald', sans-serif;
+    font-weight: 500;
     font-size: 20px
+}
+.socialmedia{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+.socials{
+    padding: 1rem;
+    width: 40px;
+}
+
+.merchandise{
+    background-color: #031926;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.bookings{
+    background-color: crimson;
+    border-radius: 20px;    
+    padding: 10px;
 }
 
 .fillings{
     height: 300px;
     background-color: tomato;
 }
-
-
 
 footer{
     position: fixed;
