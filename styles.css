@@ -22,6 +22,9 @@ body,html{
     font-weight: 500;
     font-size: 20px
 }
+.logo{
+    width: 8vw;
+}
 .socialmedia{
     margin-left: 3rem;
     display: flex;
@@ -44,10 +47,36 @@ body,html{
     padding: 10px;
 }
 
-.fillings{
-    height: 300px;
-    background-color: tomato;
+.content{
+    width: 70%;
+    color: white;
 }
+
+
+/* LATEST RELEASES */
+.latestreleases{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.release{
+    background-color: #1f1c1c;
+    border-radius: 15px;
+}
+.sociallinks > a, img{
+    width: 2rem;
+}
+.sociallinks > a{
+    margin: 0.5rem;
+}
+.sociallinks{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
 
 footer{
     position: fixed;
