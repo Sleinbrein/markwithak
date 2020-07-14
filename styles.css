@@ -12,6 +12,7 @@ body,html{
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .navbar{
@@ -59,14 +60,16 @@ body,html{
 /* LATEST RELEASES */
 .latestreleases{
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 10vh;
 }
 
 .release{
     background-color: #1f1c1c;
     border-radius: 15px;
 }
+
 .sociallinks > a, img{
     width: 2rem;
 }
@@ -171,9 +174,13 @@ footer > p, a{
 
 
 
-
-
-
+/* show only 2 newest releases if the window on pc is small */
+@media screen and (max-width: 1320px) {
+    .latestreleases > .release:nth-child(3){
+        display: none;
+        visibility: hidden;
+    }
+}
 
 
 /* COMPUTER */
