@@ -159,7 +159,17 @@ footer > p, a{
 
 }
 
-
+/* COMPUTER */
+@media screen and (min-width: 993px){
+    .latestreleasemobile{
+        display: none;
+        visibility: hidden;
+    }
+    .socialbarmobile{
+        display: none;
+        visibility: hidden;
+    }
+}
 /* On screens that are 992px wide or less, go from four columns to two columns */
 /* TABLETS */
 @media screen and (max-width: 992px) {
