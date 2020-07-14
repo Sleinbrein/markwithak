@@ -79,6 +79,10 @@ body,html{
 }
 
 
+.extracontent{
+    height: 600px;
+    background-color: crimson;
+}
 
 
 footer{
@@ -112,11 +116,6 @@ footer > p, a{
     color: white;
 }   
 
-.socialbarmobile{
-    height: 200px;
-    background-color: yellow;
-}
-
 .socialbar{
     width: 100%;
     display: flex;
@@ -135,6 +134,9 @@ footer > p, a{
     width: 153px;
     height: 31px;
     border-radius: 10px;
+    border: 0;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 
@@ -186,8 +188,12 @@ footer > p, a{
         margin-top: 57px;
     }
 
+    .socialbarmobile{
+        position: sticky;
+        bottom: 0;
+        left: 0;
+    }
     .socialmedia{
-
         flex-direction: column;
         flex: 100%;
         margin: 0;
