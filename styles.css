@@ -30,6 +30,9 @@ body,html{
     display: flex;
     align-items: center;
 }
+.socialmedia img{
+    padding: 0;
+}
 .socials{
     padding: 1rem;
     width: 40px;
@@ -108,3 +111,85 @@ footer > p, a{
     text-decoration: none;
     color: white;
 }   
+
+.socialbarmobile{
+    height: 200px;
+    background-color: yellow;
+}
+
+.socialbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.merchandbookings{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* custom layout for mobile buttons */
+.merchandbookings button{
+    background-color: #F4F4F4;
+    color:black;
+    width: 153px;
+    height: 31px;
+    border-radius: 10px;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+/* TABLETS */
+@media screen and (max-width: 992px) {
+    .logo{
+        width: 120px;
+        flex: 1;
+    }
+    footer{
+        background-color: #2ecc71;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  /* SMARTPHONES */
+  @media screen and (max-width: 600px) {
+    .logo{
+        width: 90px;
+    }
+
+    /* Temporary: remove the content */
+    .content{
+        visibility: hidden;
+    }
+
+    /* remove the footer */
+    footer{
+        visibility: hidden;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    
+    .socialmedia a{
+        visibility: hidden;
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+    }
+    
+    .logo{
+        width: 124px;
+        margin-top: 57px;
+    }
+
+    .socialmedia{
+
+        flex-direction: column;
+        flex: 100%;
+        margin: 0;
+    }
+  }
