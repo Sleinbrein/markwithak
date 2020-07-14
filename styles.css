@@ -180,6 +180,11 @@ footer > p, a{
     footer{
         background-color: #2ecc71;
     }
+
+    .content .latestreleases{
+        visibility: hidden;
+        display: none;
+    }
   }
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
