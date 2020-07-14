@@ -139,6 +139,26 @@ footer > p, a{
 
 }
 
+.latestreleasemobile{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.latestreleasemobile img{
+    margin-top: 20vh;
+    width: 25vh;
+    height: 25vh;
+}
+
+.playnow button{
+    border: 0;
+    background-color: #ECF0F1;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 /* TABLETS */
@@ -160,8 +180,9 @@ footer > p, a{
     }
 
     /* Temporary: remove the content */
-    .content{
+    .content .latestreleases{
         visibility: hidden;
+        display: none;
     }
 
     /* remove the footer */
