@@ -59,7 +59,7 @@ body,html{
 /* LATEST RELEASES */
 .latestreleases{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-evenly;
 }
 
@@ -158,6 +158,23 @@ footer > p, a{
     border-radius: 10px;
 
 }
+
+
+/* ABOUT ME SECTION */
+.profilepicture{
+    padding: 20px;
+    float: right;
+    width: 30%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
 
 /* COMPUTER */
 @media screen and (min-width: 993px){
