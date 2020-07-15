@@ -4,6 +4,7 @@
 }
 body,html{
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -82,11 +83,13 @@ body,html{
 }
 
 
-.extracontent{
-    height: 600px;
-    background-color: crimson;
+.tekstmark{
+    /* height: 400px; */
+    background-color: #2ecc71;
 }
-
+.photomark{
+    float: right;
+}
 
 footer{
     position: fixed;
@@ -164,14 +167,22 @@ footer > p, a{
 
 
 /* ABOUT ME SECTION */
-.profilepicture{
-    padding: 20px;
-    float: right;
-    width: 30%;
-    border-radius: 50%;
+
+.aboutme{
+    padding: 1rem;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
 }
 
-
+.markimage > img{
+    margin: 20px;
+    width: 20vw;
+    border-radius: 50%;
+}
+.marktest > h1{
+    color: #F1FAEE
+}
 
 
 /* show only 2 newest releases if the window on pc is small */
@@ -252,10 +263,20 @@ footer > p, a{
         position: sticky;
         bottom: 0;
         left: 0;
+        margin-top: 12px;
     }
     .socialmedia{
         flex-direction: column;
         flex: 100%;
         margin: 0;
+    }
+
+    .aboutme{
+        flex-direction: column-reverse;
+    }
+    .markimage > img{
+        margin: 20px;
+        width: 50vw;
+        border-radius: 50%;
     }
   }
