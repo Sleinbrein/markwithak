@@ -267,6 +267,10 @@ footer > p, a{
     .content{
         width: 100%;
     }
+
+    .merchandbookings > button{
+        cursor: pointer;
+    }
     
     .logo{
         width: 124px;
