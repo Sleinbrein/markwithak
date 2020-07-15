@@ -78,9 +78,6 @@ body,html{
     border-radius: 15px;
 }
 
-.sociallinks > a, img{
-    width: 2rem;
-}
 .sociallinks > a{
     margin: 0.5rem;
 }
@@ -115,7 +112,6 @@ footer{
     background-color: #211F25;
     color: white;
 }
-
 
 
 footer button{
@@ -170,6 +166,7 @@ footer > p, a{
     margin-top: 20vh;
     width: 25vh;
     height: 25vh;
+    animation: latestreleasetransformanimation 1s;
 }
 
 .playnow button{
@@ -297,3 +294,15 @@ footer > p, a{
         border-radius: 50%;
     }
   }
+
+
+
+
+
+@keyframes latestreleasetransformanimation{
+    from{
+        transform: scaleX(-1);
+    }to{
+        transform: scale(1);
+    }
+}
