@@ -71,7 +71,7 @@ body,html{
     background-color: #1f1c1c;
     border-radius: 15px;
 }
-.sociallinks > a, img{
+.sociallinks > a{
     width: 2rem;
 }
 .sociallinks > a{
@@ -113,7 +113,7 @@ body,html{
 
 
 
-
+/* FOOTER */
 footer{
     position: fixed;
     bottom: 0;
@@ -125,6 +125,8 @@ footer{
     background-color: #211F25;
     color: white;
 }
+
+
 
 footer button{
     cursor: pointer;
