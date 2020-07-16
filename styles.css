@@ -5,6 +5,8 @@
 body,html{
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-image: url("images/background.jpg");
+    background-position: 0fr;
 }
 
 .container{
@@ -180,7 +182,6 @@ footer > p, a{
     background-color: #ECF0F1;
     padding: 5px;
     border-radius: 10px;
-
 }
 
 
@@ -188,7 +189,7 @@ footer > p, a{
 
 .aboutme{
     /* this marginbotton is to get no overlap with the footer which is 67px hight */
-    margin-bottom: 67px;
+    margin-bottom: 59px;
     padding: 1rem 15vh;
     background-color: crimson;
     display: flex;
@@ -251,7 +252,7 @@ footer > p, a{
         position: sticky;
         bottom: 0;
         left: 0;
-        margin-top: 12px;
+        margin-top: 20px;
     }
 
     .latestreleasemobile img{
@@ -265,7 +266,7 @@ footer > p, a{
 
     footer{
         position: inherit;
-        background-color: #2ecc71;
+        background-color: #211F25;
         flex-direction: column;
     }
 
@@ -302,6 +303,10 @@ footer > p, a{
     /* remove the footer */
     footer{
         visibility: hidden;
+        display: none;
+    }
+    .aboutme{
+        margin-bottom: 0;
     }
     
 
