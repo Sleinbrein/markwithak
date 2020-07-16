@@ -118,8 +118,14 @@ footer button{
     cursor: pointer;
     background-color: rgb(31, 27, 27);
     border: 0px;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 20%;
+}
+
+.subscribe input{
+    border-radius: 20px;
+    border: 0px;
+    padding: 8px;
 }
 
 button:hover{
@@ -183,11 +189,12 @@ footer > p, a{
 .aboutme{
     /* this marginbotton is to get no overlap with the footer which is 67px hight */
     margin-bottom: 67px;
-    padding: 1rem;
+    padding: 1rem 15vh;
     background-color: crimson;
     display: flex;
     align-items: center;
 }
+
 
 .markimage > img{
     margin: 20px;
@@ -223,16 +230,53 @@ footer > p, a{
 /* TABLETS */
 @media screen and (max-width: 992px) {
     .logo{
-        width: 120px;
-        flex: 1;
+        width: 168px;
+        margin-top: 57px;
     }
+    .navbar{
+        padding: 0;
+    }
+
+    .socialmedia a{
+        visibility: hidden;
+        display: none;
+    }
+    .socialmedia{
+        flex-direction: column;
+        flex: 100%;
+        margin: 0;
+    }
+
+    .socialbarmobile{
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        margin-top: 12px;
+    }
+
+    .latestreleasemobile img{
+        width: 35vh;
+        height: 35vh;
+    }
+
+    .content{
+        width: 100%;
+    }
+
     footer{
+        position: inherit;
         background-color: #2ecc71;
+        flex-direction: column;
     }
 
     .content .latestreleases{
         visibility: hidden;
         display: none;
+    }
+
+    .aboutme{
+        flex-direction: column-reverse;
+        padding: 1rem;
     }
   }
   
@@ -249,24 +293,17 @@ footer > p, a{
         display: none;
     }
 
+    .latestreleasemobile img{
+        width: 25vh;
+        height: 25vh;
+    }
+
+
     /* remove the footer */
     footer{
         visibility: hidden;
     }
-
-    .navbar{
-        padding: 0;
-    }
-
     
-    .socialmedia a{
-        visibility: hidden;
-        display: none;
-    }
-
-    .content{
-        width: 100%;
-    }
 
     .merchandbookings > button{
         cursor: pointer;
@@ -277,21 +314,12 @@ footer > p, a{
         margin-top: 57px;
     }
 
-    .socialbarmobile{
-        position: sticky;
-        bottom: 0;
-        left: 0;
-        margin-top: 12px;
-    }
     .socialmedia{
         flex-direction: column;
         flex: 100%;
         margin: 0;
     }
 
-    .aboutme{
-        flex-direction: column-reverse;
-    }
     .markimage > img{
         margin: 20px;
         width: 50vw;
